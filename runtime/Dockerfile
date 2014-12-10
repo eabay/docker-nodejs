@@ -2,8 +2,7 @@ FROM ubuntu:trusty
 
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get update && \
-    apt-get upgrade -y
+RUN apt-get update
 
 RUN apt-get install -y software-properties-common && \
     add-apt-repository ppa:chris-lea/node.js && \
