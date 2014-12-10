@@ -3,7 +3,7 @@
 This image provides a base to run node.js programs.
 
 * Based on [Ubuntu Trusty](https://registry.hub.docker.com/_/ubuntu/) (14.04.1)
-* Chris Lea [PPA repository](https://launchpad.net/~chris-lea/+archive/ubuntu/node.js/+packages) version of Node.js (v0.10.33)
+* [NodeSource](https://nodesource.com/) node.js binary distributions (v0.10.33)
 * [Supervisor](http://supervisord.org) to manage your application process (3.0b2)
 * Adds application code to `/app` folder on build.
 * `npm -q start` command executed in `/app` folder
