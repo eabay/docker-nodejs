@@ -6,8 +6,7 @@ RUN apt-get update
 
 RUN apt-get install -y curl && \
     curl -sL https://deb.nodesource.com/setup | bash - && \
-    apt-get install -y nodejs && \
-    apt-get install -y supervisor && \
+    apt-get install -y nodejs supervisor && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
