@@ -3,8 +3,8 @@
 This image provides a base to run node.js programs.
 
 * Based on [Debian Wheezy](https://registry.hub.docker.com/_/debian/)
-* [NodeSource](https://nodesource.com/) node.js binary distributions (v0.10.33)
-* [Supervisor](http://supervisord.org) to manage your application process (3.0a8)
+* [NodeSource](https://nodesource.com/) node.js binary distributions
+* [Supervisor](http://supervisord.org) to manage your application process
 * Adds application code to `/app` folder on build.
 * `npm -q start` command executed in `/app` folder
 * Console output directed to `/logs/out.log` and `/logs/err.log` files. You can access them by bind-mounting `/logs` path.
