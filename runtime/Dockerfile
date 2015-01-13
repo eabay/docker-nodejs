@@ -12,7 +12,8 @@ RUN apt-get install -y curl && \
 
 ENV NODE_ENV production
 
-RUN npm i -g coffee-script && \
+RUN npm up -g npm && \
+    npm i -g coffee-script && \
     npm cache clean
 
 ADD supervisor.conf /etc/supervisor/conf.d/app.conf
