@@ -1,9 +1,9 @@
-build-runtime:
-	cd runtime;
+build:
+	cd src;
 	sudo docker build -t mc2labs/nodejs .
 
 build-dev:
-	cd dev;
+	cd src/dev;
 	sudo docker build -t mc2labs/nodejs:dev .
 
-.PHONY: build-runtime build-dev
+.PHONY: build build-dev
