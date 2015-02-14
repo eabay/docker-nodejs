@@ -2,8 +2,7 @@
 
 This image provides a base to run node.js programs.
 
-* Based on [Debian Wheezy](https://registry.hub.docker.com/_/debian/)
-* [NodeSource](https://nodesource.com/) node.js binary distributions
+* Based on [node:slim](https://registry.hub.docker.com/_/node/) image
 * [Supervisor](http://supervisord.org) to manage your application process
 * Adds application code to `/app` folder on build.
 * `npm -q start` command executed in `/app` folder

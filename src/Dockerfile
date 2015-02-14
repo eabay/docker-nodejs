@@ -1,19 +1,11 @@
-FROM debian:wheezy
+FROM node:slim
 
 ENV DEBIAN_FRONTEND noninteractive
-
-RUN apt-get update
-
-RUN apt-get install -y curl && \
-    curl -sL https://deb.nodesource.com/setup | bash - && \
-    apt-get install -y nodejs supervisor && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-
 ENV NODE_ENV production
 
-RUN npm up -g npm && \
-    npm i -g coffee-script && \
+RUN apt-get update && apt-get install -y supervisor --no-install-recommends && \
+    apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
+    npm up -g npm && npm i -g coffee-script && \
     npm cache clean
 
 ADD supervisor.conf /etc/supervisor/conf.d/app.conf
