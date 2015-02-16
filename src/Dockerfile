@@ -1,4 +1,4 @@
-FROM node:slim
+FROM node:0.10-slim
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV NODE_ENV production
