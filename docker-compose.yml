@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  nodejs:
+    build: .
+    image: mc2labs/nodejs
+
+  nodejs-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    image: mc2labs/nodejs-dev
