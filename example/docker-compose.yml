@@ -6,7 +6,7 @@ services:
     image: docker-nodejs-sampleapp
 
   sample-dev:
-    image: mc2labs/nodejs-dev
+    image: mc2labs/nodejs:dev
     ports:
       - '5000:5000'
     volumes:

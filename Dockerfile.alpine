@@ -1,0 +1,16 @@
+FROM mhart/alpine-node
+
+ENV NODE_ENV production
+
+RUN apk add --no-cache supervisor && \
+    npm i -g coffee-script && \
+    npm cache clean && rm -rf /tmp/*
+
+COPY supervisor.conf /etc/supervisor.d/app.ini
+
+ONBUILD COPY . /app
+WORKDIR /app
+
+VOLUME /logs
+
+CMD ["/usr/bin/supervisord", "-n"]
