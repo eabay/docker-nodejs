@@ -6,7 +6,7 @@ ENV NODE_ENV development
 WORKDIR /app
 
 RUN apk add --no-cache bash python build-base git && \
-    npm i -g coffee-script supervisor node-inspector && \
+    npm i -g coffee-script supervisor node-inspector yarn && \
     npm cache clean && rm -rf /tmp/*
 
 CMD bash

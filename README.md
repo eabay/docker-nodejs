@@ -16,7 +16,7 @@ See [sample application](https://github.com/mc2labs/docker-nodejs/tree/master/ex
 
 ### dev
 
-Development version has the essentials to install packages require compilation steps. It also includes [supervisor](https://www.npmjs.org/package/supervisor) to restart your server on file changes and [node-inspector](https://www.npmjs.org/package/node-inspector) to debug your application.
+Development version has the essentials to install packages require compilation steps. It also includes [supervisor](https://www.npmjs.org/package/supervisor) to restart your server on file changes and [node-inspector](https://www.npmjs.org/package/node-inspector) to debug your application. You can use [yarn](https://yarnpkg.com/) as a package manager.
 
 
 ## Alpine Linux based versions
