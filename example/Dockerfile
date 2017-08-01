@@ -1,3 +1,3 @@
-FROM mc2labs/nodejs
+FROM eabay/nodejs
 
 EXPOSE 5000

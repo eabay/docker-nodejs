@@ -11,7 +11,7 @@
 * Console output directed to `/logs/out.log` and `/logs/err.log` files. You can access them by bind-mounting `/logs` path.
 * Includes globally installed CoffeeScript to execute coffee files directly without transpilation.
 
-See [sample application](https://github.com/mc2labs/docker-nodejs/tree/master/example) for basic usage.
+See [sample application](https://github.com/eabay/docker-nodejs/tree/master/example) for basic usage.
 
 
 ### dev
