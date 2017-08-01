@@ -7,6 +7,6 @@ WORKDIR /app
 
 RUN apk add --no-cache bash python build-base git && \
     npm i -g coffee-script supervisor yarn && \
-    npm cache clean && rm -rf /tmp/*
+    npm cache clean --force && rm -rf /tmp/*
 
 CMD bash
