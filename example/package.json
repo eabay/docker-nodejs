@@ -1,8 +1,8 @@
 {
   "name": "docker-nodejs-sample-app",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "scripts": {
-    "start": "coffee server.coffee",
-    "dev": "supervisor src/server.coffee"
+    "start": "node server.js",
+    "dev": "supervisor src/server.js"
   }
 }

@@ -1,9 +1,12 @@
-version: '2'
+version: '3'
 
 services:
   sample:
     build: .
     image: docker-nodejs-sampleapp
+    ports:
+      - '5000:5000'
+    command: npm start
 
   sample-dev:
     image: eabay/nodejs:dev
